@@ -239,7 +239,7 @@ body{
 
   @media only screen and (max-width: 1200px) {
     .displayEl{
-       text-decoration: 2px underline #009578;
+       /* text-decoration: 2px underline #009578; */
        color: #009578;
     }
     .COL{
@@ -247,17 +247,19 @@ body{
     }
     .text{
         display: block;
-        width: 200px;
-        font-size: 17px;   
+        width: 280px;
+        font-size: 16px;   
     }
     .displayEl::after{
         content: ":";
     }
     .text::after{
       display: block;
-      content: "____________________________________";
+      height: 2px;
+      content: "";
       color: #ccc;
-      margin: 0px;
+      margin: 0px; 
+      background-color: #ccc;                       
     }
     
   }
