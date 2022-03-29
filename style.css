@@ -188,8 +188,13 @@ body{
       color: rgb(71, 71, 71);
       width: 150px;
       font-weight: 700;
-  }
-  .text{
+      padding: 0px;
+      padding-left: 2px;
+      margin: 0px;
+      margin-left: 5px;
+    }
+    .text{
+   
     color: #000000;
     font-weight: 500;
   }
@@ -213,9 +218,12 @@ body{
   }
 
 .text{
-    font-size: 15px
+    font-size: 15px;
+    margin-left: 2PX;
 }
-
+.TEX{
+  padding: 0px;
+}
   /* 768 */
 
 
@@ -240,10 +248,16 @@ body{
     .text{
         display: block;
         width: 200px;
-        font-size: 17px    
+        font-size: 17px;   
     }
     .displayEl::after{
         content: ":";
+    }
+    .text::after{
+      display: block;
+      content: "____________________________________";
+      color: #ccc;
+      margin: 0px;
     }
     
   }
