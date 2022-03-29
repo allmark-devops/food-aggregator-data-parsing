@@ -281,13 +281,13 @@ body{
   
   @media only screen and (max-width: 991px) {
       
-  .secondCol{
+  /* .secondCol{
       display: none;
       position: absolute;
   }
   #show{
     display: inline-block;
-  }
+  } */
   
     
     
