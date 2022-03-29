@@ -1,0 +1,280 @@
+body{
+    background-color: #ccc;
+}
+
+
+.container{
+    text-align: center;
+
+    background-color: #ccc;
+    border-radius: 10px/10px;
+  
+    
+}
+
+.col{
+    background-color: white;
+    border-radius: 10px/10px;
+    margin: 5px;
+    padding: 10px;
+}
+
+
+
+
+
+
+
+.drop-zone {
+
+    width: 100%;
+    height: 40px;
+    padding: 2px;
+  
+    display: inline-block;
+   
+
+    font-family: "Quicksand", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    cursor: pointer;
+    color: #616060;
+    border: 2px dashed #009578;
+    border-radius: 10px;
+  }
+
+  .drop-zone--over {
+    border-style: solid;
+  }
+
+  .drop-zone__input {
+    display: none;
+  }
+
+  .drop-zone__thumb {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #cccccc;
+    background-size: cover;
+    position: relative;
+  }
+
+  .drop-zone__thumb::after {
+    content: attr(data-label);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 5px 0;
+    color: #000000;
+    background: rgba(255, 255, 255, 0);
+    font-size: 14px;
+    text-align: center;
+  }
+
+
+  .btnFilterx{
+    
+    min-width: 100px;
+    height: 30px;
+    padding: 2px;
+    border-radius: 5px 5px 0px 0px;
+    color: rgb(87, 85, 85);
+    background-color: #eef1f5;
+    font-weight: bolder;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border: none;
+   
+  
+    
+    
+  }
+
+  .btnFilter {
+    min-width: 100px;
+    height: 30px;
+    padding: 3px;
+    /* padding-bottom: 10px; */
+    background-color: #009578;
+    border-radius: 5px/5px;
+    color: rgb(255, 253, 253);
+
+    font-weight: bolder;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border: none;
+
+    display: inline-block;
+  }
+
+/* 
+  .con{
+    margin: 5px;
+    display: inline-block;
+    width: 213px;
+  
+    padding: 3px 4px 5px 4px;
+    background-color: #ccc;
+    border-radius: 5px 5px 0px 0px;
+  } */
+
+
+  
+  .active{
+    color: rgb(255, 253, 253);
+    background-color: #009578;
+  }
+  
+  
+  
+  
+  .select{
+   
+    padding: 5px;
+    font-weight: bolder;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+
+.tabcontent{
+    display: none;
+    text-align: left;
+    margin: auto;
+    background-color: white;
+    width: 590px;
+    height: 460px;
+    overflow: scroll;
+    resize: both;
+    border: 2px solid #009578;
+    
+  }
+
+  #output {
+    display: none;
+    text-align: left;
+
+      background-color: white;
+      width: 590px;
+      height: 460px;
+      overflow: scroll;
+      resize: both;
+      border: 2px solid #009578;
+   
+  }
+
+
+   
+  .iframeDisplay {
+    /* max-width: 1000px; */
+    max-height: 596px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 7px;
+    overflow: scroll;
+    text-align: left;
+    padding: 5px;
+  
+  }
+
+
+    .displayElHeader{
+      text-align: center;
+      color: rgb(0, 0, 0);
+      font-weight: 700;
+  }
+  
+  .displayEl{
+      color: rgb(71, 71, 71);
+      width: 150px;
+      font-weight: 700;
+  }
+  .text{
+    color: #000000;
+    font-weight: 500;
+  }
+  .COL{
+    color: rgb(71, 71, 71);
+    width: 50px;
+    font-weight: 900;
+  }
+
+
+  .title{
+      text-align: center;
+      background-color: #009578;
+      color: white;
+      font-weight: 900;
+  }
+
+
+  .coller{
+      width: 200px;
+  }
+
+.text{
+    font-size: 15px
+}
+
+  /* 768 */
+
+
+  @media only screen and (max-width: 769px) {
+    .tabcontent{
+        width: 400px;
+    }
+    #output {
+        width: 400px;
+    }
+  }
+
+
+  @media only screen and (max-width: 1200px) {
+    .displayEl{
+       text-decoration: 2px underline #009578;
+       color: #009578;
+    }
+    .COL{
+        display: none;
+    }
+    .text{
+        display: block;
+        width: 200px;
+        font-size: 17px    
+    }
+    .displayEl::after{
+        content: ":";
+    }
+    
+  }
+
+  #show{
+    display: none;
+    position: absolute;
+    top: 40;
+    padding: 2px;
+    margin: 5px;
+    height: 30px;
+    width: 30px;
+    font-size: large;
+    border-radius: 5px/5px;
+    border: none;
+    background-color: #000000;
+    color: white;
+  }
+  
+  @media only screen and (max-width: 991px) {
+      
+  .secondCol{
+      display: none;
+      position: absolute;
+  }
+  #show{
+    display: inline-block;
+  }
+  
+    
+    
+  }
+
+  
