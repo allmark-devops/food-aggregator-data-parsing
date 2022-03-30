@@ -144,7 +144,7 @@ body{
     margin: auto;
     background-color: white;
     width: 590px;
-    height: 460px;
+    height: calc(100vh - 179px);
     overflow: scroll;
     resize: both;
     border: 2px solid #009578;
@@ -157,7 +157,7 @@ body{
 
       background-color: white;
       width: 590px;
-      height: 460px;
+      height: calc(100vh - 179px);
       overflow: scroll;
       resize: both;
       border: 2px solid #009578;
@@ -168,7 +168,7 @@ body{
    
   .iframeDisplay {
     /* max-width: 1000px; */
-    max-height: 596px;
+    height: calc(100vh - 22px);
     background-color: rgb(255, 255, 255);
     border-radius: 7px;
     overflow: scroll;

@@ -130,7 +130,7 @@ function FilterData() {
         document.getElementById("text7").innerHTML = jsondata.data.avgRatingString
         document.getElementById("text8").innerHTML = ""
         document.getElementById("text9").innerHTML = ""
-        document.getElementById("text10").innerHTML = jsondata.data.restaurantLicenses.text
+        document.getElementById("text10").innerHTML = jsondata.data.restaurantLicenses[0].text
         document.getElementById("text11").innerHTML = jsondata.data.locality
         document.getElementById("text12").innerHTML = jsondata.data.area
         document.getElementById("text13").innerHTML = jsondata.data.city
